@@ -1,0 +1,108 @@
+*{
+    font-family: sans-serif;
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+text-align: center;}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #18181b;
+    color: #ffffff;
+    width: 100%;
+    height: 100vh;
+}
+
+.gerador{
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.container-input{
+    max-width: 480px ;
+    margin: 20px 0;
+}
+
+.container-input span{
+    font-size: 25px;
+}
+
+.slider{
+
+    -webkit-appearance: none;
+    width: 100%;
+    border-radius: 10px;
+    margin: 10px;
+    background-color: #7e2424;
+    height: 7px;
+    outline: none;
+}
+
+.button-cta{
+    height: 40px;
+    background-color: green;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 40px;
+    font-weight: bold;
+    font-size: 20px;
+    color: #ffffff;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.container-password{
+    max-width: 480px;
+    margin: 14px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+.title{
+    text-align: center;
+    font-size: 28px;
+    margin-top: 24px;
+    margin-bottom: 8px;
+}
+
+.password{
+    height: 60px;
+    background-color: #5b5b8b5d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    border: 1px solid #313131;
+    transition: transform 0.5s;
+}
+
+.password:hover{
+    transform: scale(1.05);
+}
+
+.tooltrip{
+    position: relative;
+    top: 20px;
+    padding: 6px 8px;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 4px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+    background-color: #313131;
+}
+
+.hide{
+    display: none;
+}
+
+.container-password:hover .tooltrip{
+    visibility: visible;
+    bottom: 50px;
+    opacity: 1;
+}
